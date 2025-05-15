@@ -1,55 +1,63 @@
 <!DOCTYPE html>
-
 <html>
 
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-	<table>
-		<thead>
-			<tr>
-			<th>Roll number</th>
-			<th>Names</th>
-				</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td>1</td>
-				<td>Sagar</td>
-			</tr>
-			<tr>
-				<td>2</td>
-				<td>Sid</td>
-			</tr>
-			<tr>
-				<td>3</td>
-				<td>Shiv</td>
-			</tr>
-		</tbody>
-		 </table>
-	 <h2>List of medias</h2>
-	<ol>
-		<li>
-		<img src="https://picsum.photos/id/123/200/300" alt="water">
-		</li>
-		<li>
-		<video controls>
-			<source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4">
-		</video>
-		</li>
-		
-		<li>
-			<audio controls>
-				<source src="http://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg">
-			</audio>
-	</li>
-	</ol>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+  <!-- Semantic Table -->
+  <table>
+    <thead>
+      <tr>
+        <th>Roll number</th>
+        <th>Names</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Sagar</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Sid</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Shiv</td>
+      </tr>
+    </tbody>
+  </table>
 
+  <!-- Required heading -->
+  <h2>List of medias</h2>
+
+  <!-- Semantic Ordered List with 3 Items -->
+  <ol>
+    <!-- 1st item: Image -->
+    <li>
+      <img src="https://picsum.photos/id/123/200/300" alt="water">
+    </li>
+
+    <!-- 2nd item: Video with correct source tag -->
+    <li>
+      <video controls>
+        <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </li>
+
+    <!-- 3rd item: Audio in the last list item with correct src -->
+    <li>
+      <audio controls>
+        <source src="http://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg" type="audio/ogg">
+        Your browser does not support the audio element.
+      </audio>
+    </li>
+  </ol>
+
+  <script type="text/javascript" src="./script.js"></script>
 </body>
 
 </html>
